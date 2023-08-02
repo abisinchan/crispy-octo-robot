@@ -6,8 +6,8 @@ const path = require('path');
 const fs = require('fs');
 const uuid = require('./helpers/uuid');
 
-//port
-const PORT = 3001;
+// Heroku's PORT environment
+const port = process.env.PORT || 3001
 
 //express application
 const app = express();
